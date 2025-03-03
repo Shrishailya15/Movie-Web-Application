@@ -1,0 +1,142 @@
+.movie-search-container {
+    text-align: center;
+    width: auto;
+    margin: 20px auto;
+    padding: 20px;
+    background: #1c1c1c;
+    border-radius: 8px;
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline-color: red;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #e50914;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.search-box button:hover {
+     background: #ff0a16;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+
+.movie-card {
+    background: #282828;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width:1050px) {
+    .movie-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    } 
+}
+
+@media (max-width:872px) {
+    .movie-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    } 
+}
+
+@media (max-width:690px) {
+    .movie-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    } 
+}
+
+@media (max-width:486px) {
+    .movie-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    } 
+}
+
+
+.movie-card img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+.movie-card h3 {
+    font-size: 18px;
+    margin: 5px 0;
+    color: white;
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #b3b3b3;
+    text-align: justify;
+    overflow: hidden;
+    color: red;
+}
+
+
+.movie-card-footer {
+    position: static;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 30px;
+}
+
+
+.rating {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
